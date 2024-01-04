@@ -14,7 +14,7 @@ logging.basicConfig(level=logging.INFO,
                     format="%(asctime)s [%(levelname)s] %(message)s")
 
 date = datetime.now().strftime("%H-%M-%S-%d-%m-%Y")
-results_dir = Path(__file__).parent.parent / "results" / \
+results_dir = Path(__file__).parent.parent.parent / "results" / \
     "summarization" / "train" / f"exp_{date}"
 print(f"Results directory: {results_dir}")
 

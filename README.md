@@ -21,6 +21,10 @@ The repository contains a series of natural language processing (NLP) tasks addr
     ```bash
     pip install git+https://github.com/sarapiscitelli/nlp-tasks/
     ```
+    1.3 Clone the repository to get the scripts:   
+    ```bash
+    git clone https://github.com/sarapiscitelli/nlp-tasks.git
+    ```
 
 2. Run the experiments   
     Training:
