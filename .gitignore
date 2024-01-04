@@ -1,0 +1,28 @@
+data/
+results
+**/*.venv
+**/*.env
+**/*.csv
+**/*.lock
+
+# IDE
+**/.idea/*
+**/*.iws
+**/*.iml
+**/*.ipr
+**.vscode
+**/*package-lock.json
+
+# python
+**/__pycache__/
+**/*.pyc
+**/.DS_Store
+**/*.out
+**/*.pyo
+**/*.pyd
+**/*.so
+**/*.dylib
+**/*.egg-info
+**/*.egg
+**/*.whl
+**/*.dist-info

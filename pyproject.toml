@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "nlp-tasks"
+version = "0.1.0"
+description = "A collection of nlp tasks"
+authors = ["Sara Piscitelli <104431794+sarapiscitelli@users.noreply.github.com>"]
+license = "GNU AFFERO GENERAL PUBLIC LICENSE"
+packages = [
+    { include = "nlp_datasets", from = "src" },
+    { include = "nlp_training", from = "src" },
+    { include = "nlp_inference", from = "src" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+datasets = "^2.16.1"
+scikit-learn = "^1.3.2"
+pandas = "^2.1.4"
+transformers = "^4.36.2"
+fire = "^0.5.0"
+evaluate = "^0.4.1"
+torch = "^2.1.2"
+accelerate = "^0.25.0"
+seqeval = "^1.2.2"
+trl = "^0.7.7"
+peft = "^0.7.1"
+bitsandbytes = "^0.41.3.post2"
+tensorboardx = "^2.6.2.2"
+rouge-score = "^0.1.2"
+more-itertools = "^10.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
