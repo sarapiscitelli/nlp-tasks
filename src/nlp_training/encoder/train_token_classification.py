@@ -83,8 +83,10 @@ def train_encoder(
     weighted_loss: Optional[bool] = False,
     enable_printer: Optional[bool] = True,
 ):
-
+    # Tokenization function coming from https://huggingface.co/docs/transformers/main/tasks/token_classification
     def _tokenize_and_align_labels(examples: Dict[str, List[Any]]):
+        # Coming from HuggingFace tutorial
+        # https://huggingface.co/docs/transformers/main/tasks/token_classification
         """Tokenize data
         Args:
             examples (Dict[str, List[Any]]): examples to tokenize

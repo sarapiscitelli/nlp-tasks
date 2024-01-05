@@ -97,7 +97,10 @@ def train_encoder(
     enable_printer: Optional[bool] = True,
 ):
 
+    # Tokenization function coming from https://huggingface.co/docs/transformers/main/tasks/question_answering
     def _tokenize_data(examples: Dict[str, List[Any]]):
+        # Function coming from the HuggingFace tutorial
+        # https://huggingface.co/docs/transformers/main/tasks/question_answering
         """Tokenize data
         Args:
             examples (Dict[str, List[Any]]): examples to tokenize
