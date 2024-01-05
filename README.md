@@ -1,6 +1,9 @@
 # nlp-tasks
 
-The repository contains a series of natural language processing (NLP) tasks addressed using various methods and models.The intention is to have a solid codebase for experimenting with different models on various standard datasets, therefore the repo has more of an experimental purpose.
+The repository contains a series of natural language processing (NLP) tasks tackled using Transformers models and standard open-source datasets.    
+Its implementation primarily utilizes PyTorch, heavily relying on the [HuggingFace Transformers](https://github.com/huggingface/transformers) and [PEFT](https://github.com/huggingface/peft) libraries.   
+The intention is to have a codebase for experimenting with different models on various standard datasets, therefore the repository has more of a demonstrative or experimental purpose.  
+Tasks included are:  
 
 - [✅] **Text Classification**
 - [✅] **Named Entity Recognition**
