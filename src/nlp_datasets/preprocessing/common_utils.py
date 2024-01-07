@@ -15,6 +15,7 @@ def filter_texts_over_tokens_threshold(dataset: Dataset,
     Args:
         dataset (Dataset): the dataset to modify
         text_feat (str): the name of the text feature to modify
+           (important) dataset[text_feat]: List[str] or List[List[str]]
         tokenizer_name (str): the name of the tokenizer to use to tokenize the texts
         tokens_threshold (int): the threshold to filter out the texts
 
