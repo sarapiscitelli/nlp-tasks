@@ -27,7 +27,8 @@ bitsandbytes = "^0.41.3.post2"
 tensorboardx = "^2.6.2.2"
 rouge-score = "^0.1.2"
 more-itertools = "^10.1.0"
-
+matplotlib = "^3.8.2"
+emoji = "^2.8.0"
 
 [build-system]
 requires = ["poetry-core"]
