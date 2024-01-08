@@ -62,10 +62,10 @@ def evaluation(texts: List[str],
     # compute metrics
     f1_score, precision_score, recall_score, accuracy_score = \
         evaluate.load("f1"), evaluate.load("precision"), evaluate.load("recall"), evaluate.load("accuracy")
-    eval_metrics = {**(f1_score.compute(predictions=predicted_classes_ids, references=labels_texts)), 
-                    **(precision_score.compute(predictions=predicted_classes_ids, references=labels_texts)),
-                    **(recall_score.compute(predictions=predicted_classes_ids, references=labels_texts)),
+    eval_metrics = {**(f1_score.compute(predictions=predicted_classes_ids, references=labels_texts, average="micro")), 
+                    **(precision_score.compute(predictions=predicted_classes_ids, references=labels_texts, average="micro")),
+                    **(recall_score.compute(predictions=predicted_classes_ids, references=labels_texts, average="micro")),
                     **(accuracy_score.compute(predictions=predicted_classes_ids, references=labels_texts))}
-    # compute supports
+    # compute supportss
     eval_metrics["support"] = {model.id2label[int(k)]: v for k,v in Counter(labels_texts).items()}
     return eval_metrics 
